@@ -1,8 +1,12 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap);
+}
+
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
-    --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
-        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
+    --background: rgb(210, 206, 212);
+    --header-background: rgba(199, 228, 234, 0.591);
+    --primary-font: 'Poppins', sans-serif;
 }
 
 body {
@@ -10,6 +14,8 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
+    justify-content: center;
+    align-content: center;
 }
 
 header {
@@ -17,7 +23,7 @@ header {
     top: 0;
     padding: 15px;
     height: 80px;
-
+    width: 600px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -32,4 +38,31 @@ header .logo {
 
 main {
     padding: 20px;
+    display: block;
+}
+
+ul {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+P {
+    font-weight: bolder;
+    color: white;
+    text-align: left;
+    width: 600px;
+}
+
+.displayed {
+    display: block;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #0e1345;
+}
+
+.greeting {
+    font-size: 64px;
+    text-align: center;
 }
